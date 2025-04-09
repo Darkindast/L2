@@ -11,7 +11,16 @@ package mephi.b22901.a.l2;
 
 public abstract class OrkBuilder {
     protected Ork ork;
-
+    protected OrkGearFactory gearFactory;
+    
+    public OrkBuilder(OrkGearFactory gearFactory) {
+        this.gearFactory = gearFactory;
+    }
+    
+    public OrkGearFactory getgearFactory() {
+        return gearFactory;
+    }
+    
     public Ork getOrk() {
         return ork;
     }

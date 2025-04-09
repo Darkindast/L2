@@ -14,7 +14,7 @@ public class OrkBuilderFactory {
         switch (tribe) {
             case "Мордор":
                 return new MordorOrkBuilder(new MordorGearFactory());
-            case "Мглистые Горы:":
+            case "Мглистые Горы":
                 return new MistyMountainsOrkBuilder(new MistyMountainsGearFactory());
             case "Дол Гулдур":
                 return new DolGuldurOrkBuilder(new DolGuldurGearFactory());

@@ -9,11 +9,10 @@ package mephi.b22901.a.l2;
  * @author Andrey
  */
 
-public class DolGuldurOrkBuilder extends OrkBuilder {
-    private final OrkGearFactory gearFactory;
 
+public class DolGuldurOrkBuilder extends OrkBuilder {
     public DolGuldurOrkBuilder(OrkGearFactory gearFactory) {
-        this.gearFactory = gearFactory;
+        super(gearFactory);
     }
     @Override
     public void buildName(String name) {

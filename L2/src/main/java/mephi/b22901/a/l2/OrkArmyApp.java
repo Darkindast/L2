@@ -27,7 +27,7 @@ public class OrkArmyApp {
     private Map<String, Ork> orcMap = new HashMap<>();
     private Faker faker = new Faker();
 
-    private static final String[] TRIBES = {"Мордор", "Мглистые Горы:", "Дол Гулдур"};
+    private static final String[] TRIBES = {"Мордор", "Мглистые Горы", "Дол Гулдур"};
     private static final String[] TYPES = {"Простой", "Лидер", "Разведчик"};
 
     private JTextArea infoTextArea;

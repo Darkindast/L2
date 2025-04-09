@@ -10,10 +10,8 @@ package mephi.b22901.a.l2;
  */
 
 public class MistyMountainsOrkBuilder extends OrkBuilder {
-    private final OrkGearFactory gearFactory;
-
     public MistyMountainsOrkBuilder(OrkGearFactory gearFactory) {
-        this.gearFactory = gearFactory;
+        super(gearFactory);
     }
      @Override
     public void buildName(String name) {

@@ -10,10 +10,8 @@ package mephi.b22901.a.l2;
  */
 
 public class MordorOrkBuilder extends OrkBuilder {
-    private final OrkGearFactory gearFactory;
-
     public MordorOrkBuilder(OrkGearFactory gearFactory) {
-        this.gearFactory = gearFactory;
+        super(gearFactory);
     }
 
     @Override
