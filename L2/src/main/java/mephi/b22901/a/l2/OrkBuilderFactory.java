@@ -10,14 +10,14 @@ package mephi.b22901.a.l2;
  */
 
 public class OrkBuilderFactory {
-    public static OrcBuilder createOrcBuilder(String tribe) {
+    public static OrkBuilder createOrcBuilder(String tribe) {
         switch (tribe) {
             case "Мордор":
-                return new MordorOrcBuilder(new MordorGearFactory());
+                return new MordorOrkBuilder(new MordorGearFactory());
             case "Мглистые Горы:":
-                return new MistyMountainsOrcBuilder(new MistyMountainsGearFactory());
+                return new MistyMountainsOrkBuilder(new MistyMountainsGearFactory());
             case "Дол Гулдур":
-                return new DolGuldurOrcBuilder(new DolGuldurGearFactory());
+                return new DolGuldurOrkBuilder(new DolGuldurGearFactory());
             default:
                 throw new IllegalArgumentException("Unknown tribe: " + tribe);
         }

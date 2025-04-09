@@ -9,7 +9,7 @@ package mephi.b22901.a.l2;
  * @author Andrey
  */
 
-public abstract class OrcBuilder {
+public abstract class OrkBuilder {
     protected Ork ork;
 
     public Ork getOrk() {

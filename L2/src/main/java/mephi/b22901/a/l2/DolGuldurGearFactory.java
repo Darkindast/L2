@@ -9,9 +9,9 @@ package mephi.b22901.a.l2;
  * @author Andrey
  */
 
-public class DolGuldurGearFactory implements OrcGearFactory {
+public class DolGuldurGearFactory implements OrkGearFactory {
     public Weapon createWeapon() { return new Spear(); }
-    public Armor createArmor() { return new Chainmail(); }
+    public Armor createArmor() { return new ChainArmor(); }
     public Banner createBanner() { return new SpiderBanner(); }
 }
 

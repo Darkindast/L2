@@ -8,7 +8,7 @@ package mephi.b22901.a.l2;
  *
  * @author Andrey
  */
-public class Chainmail implements Armor {
+public class ChainArmor implements Armor {
     @Override
     public String getName() {
         return "Кольчужная Броня";

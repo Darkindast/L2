@@ -9,10 +9,10 @@ package mephi.b22901.a.l2;
  * @author Andrey
  */
 
-public class MistyMountainsOrcBuilder extends OrcBuilder {
-    private final OrcGearFactory gearFactory;
+public class MistyMountainsOrkBuilder extends OrkBuilder {
+    private final OrkGearFactory gearFactory;
 
-    public MistyMountainsOrcBuilder(OrcGearFactory gearFactory) {
+    public MistyMountainsOrkBuilder(OrkGearFactory gearFactory) {
         this.gearFactory = gearFactory;
     }
      @Override

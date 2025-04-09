@@ -15,7 +15,7 @@ import java.awt.*;
 import java.util.*;
 import com.github.javafaker.Faker;
 
-public class OrcArmyApp {
+public class OrkArmyApp {
     private JFrame frame;
     private JComboBox<String> tribeCombo;
     private JComboBox<String> typeCombo;
@@ -33,7 +33,7 @@ public class OrcArmyApp {
     private JTextArea infoTextArea;
     private JPanel statsPanel;
 
-    public OrcArmyApp() {
+    public OrkArmyApp() {
         frame = new JFrame("Армия Орков");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 600);
@@ -95,8 +95,8 @@ public class OrcArmyApp {
         String type = (String) typeCombo.getSelectedItem();
         String name = faker.lordOfTheRings().character();
 
-        OrcBuilder builder = OrkBuilderFactory.createOrcBuilder(tribe);
-        OrcDirector director = new OrcDirector(builder);
+        OrkBuilder builder = OrkBuilderFactory.createOrcBuilder(tribe);
+        OrkDirector director = new OrkDirector(builder);
         Ork orc;
 
         switch (type) {

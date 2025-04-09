@@ -9,7 +9,7 @@ package mephi.b22901.a.l2;
  * @author Andrey
  */
 
-public interface OrcGearFactory {
+public interface OrkGearFactory {
     Weapon createWeapon();
     Armor createArmor();
     Banner createBanner();

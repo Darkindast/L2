@@ -9,21 +9,20 @@ package mephi.b22901.a.l2;
  * @author Andrey
  */
 
-public class MordorOrcBuilder extends OrcBuilder {
-    private final OrcGearFactory gearFactory;
+public class DolGuldurOrkBuilder extends OrkBuilder {
+    private final OrkGearFactory gearFactory;
 
-    public MordorOrcBuilder(OrcGearFactory gearFactory) {
+    public DolGuldurOrkBuilder(OrkGearFactory gearFactory) {
         this.gearFactory = gearFactory;
     }
-
     @Override
     public void buildName(String name) {
         ork.setName(name);
     }
-
+    
     @Override
     public void buildTribe() {
-        ork.setTribe("Mordor");
+        ork.setTribe("Dol Guldur");
     }
 
     @Override
@@ -43,14 +42,11 @@ public class MordorOrcBuilder extends OrcBuilder {
 
     @Override
     public void buildAttributes() {
-        ork.setStrength((int) (Math.random() * 100));
-        ork.setAgility((int) (Math.random() * 60));
-        ork.setIntelligence((int) (Math.random() * 30));
+        ork.setStrength((int) (Math.random() * 90 + 10));
+        ork.setAgility((int) (Math.random() * 70));
+        ork.setIntelligence((int) (Math.random() * 40));
         ork.setHealth((int) (Math.random() * 150 + 50));
     }
 }
-
-
-
 
 

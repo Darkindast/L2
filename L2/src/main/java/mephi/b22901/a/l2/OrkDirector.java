@@ -9,10 +9,10 @@ package mephi.b22901.a.l2;
  * @author Andrey
  */
 // OrcDirector.java
-public class OrcDirector {
-    private final OrcBuilder builder;
+public class OrkDirector {
+    private final OrkBuilder builder;
 
-    public OrcDirector(OrcBuilder builder) {
+    public OrkDirector(OrkBuilder builder) {
         this.builder = builder;
     }
 

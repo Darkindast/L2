@@ -9,7 +9,7 @@ package mephi.b22901.a.l2;
  * @author Andrey
  */
 
-public class MistyMountainsGearFactory implements OrcGearFactory {
+public class MistyMountainsGearFactory implements OrkGearFactory {
     public Weapon createWeapon() { return new Axe(); }
     public Armor createArmor() { return new LeatherArmor(); }
     public Banner createBanner() { return new MoonBanner(); }

@@ -11,6 +11,6 @@ package mephi.b22901.a.l2;
 public class L2 {
 
     public static void main(String[] args) {
-        new OrcArmyApp();
+        new OrkArmyApp();
     }
 }
