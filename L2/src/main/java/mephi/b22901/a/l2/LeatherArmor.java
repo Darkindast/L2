@@ -8,7 +8,7 @@ package mephi.b22901.a.l2;
  *
  * @author Andrey
  */
-// LeatherArmor.java
+
 public class LeatherArmor implements Armor {
     @Override
     public String getName() {

@@ -16,35 +16,35 @@ public class DolGuldurOrkBuilder extends OrkBuilder {
     }
     @Override
     public void buildName(String name) {
-        ork.setName(name);
+        getOrk().setName(name);
     }
     
     @Override
     public void buildTribe() {
-        ork.setTribe("Dol Guldur");
+        getOrk().setTribe("Dol Guldur");
     }
 
     @Override
     public void buildWeapon() {
-        ork.setWeapon(gearFactory.createWeapon());
+        getOrk().setWeapon(getgearFactory().createWeapon());
     }
 
     @Override
     public void buildArmor() {
-        ork.setArmor(gearFactory.createArmor());
+        getOrk().setArmor(getgearFactory().createArmor());
     }
 
     @Override
     public void buildBanner() {
-        ork.setBanner(gearFactory.createBanner());
+        getOrk().setBanner(getgearFactory().createBanner());
     }
 
     @Override
     public void buildAttributes() {
-        ork.setStrength((int) (Math.random() * 90 + 10));
-        ork.setAgility((int) (Math.random() * 70));
-        ork.setIntelligence((int) (Math.random() * 40));
-        ork.setHealth((int) (Math.random() * 150 + 50));
+        getOrk().setStrength((int) (Math.random() * 90 + 10));
+        getOrk().setAgility((int) (Math.random() * 70));
+        getOrk().setIntelligence((int) (Math.random() * 40));
+        getOrk().setHealth((int) (Math.random() * 150 + 50));
     }
 }
 

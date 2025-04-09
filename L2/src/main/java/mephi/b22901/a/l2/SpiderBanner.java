@@ -8,7 +8,6 @@ package mephi.b22901.a.l2;
  *
  * @author Andrey
  */
-// SpiderBanner.java
 public class SpiderBanner implements Banner {
     @Override
     public String getName() {

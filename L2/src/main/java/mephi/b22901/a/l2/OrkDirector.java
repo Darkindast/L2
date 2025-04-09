@@ -8,9 +8,9 @@ package mephi.b22901.a.l2;
  *
  * @author Andrey
  */
-// OrcDirector.java
+
 public class OrkDirector {
-    private final OrkBuilder builder;
+    private OrkBuilder builder;
 
     public OrkDirector(OrkBuilder builder) {
         this.builder = builder;
@@ -20,9 +20,9 @@ public class OrkDirector {
         builder.createNewOrk();
         builder.buildName(name);
         builder.buildTribe();
-        builder.buildWeapon();   // обычное оружие
+        builder.buildWeapon();   
         builder.buildArmor();
-        builder.buildBanner();   // может быть простое знамя
+        builder.buildBanner();  
         builder.buildAttributes();
         builder.getOrk().setRole("Warrior");
         return builder.getOrk();
@@ -32,15 +32,12 @@ public class OrkDirector {
         builder.createNewOrk();
         builder.buildName(name);
         builder.buildTribe();
-
-        builder.buildWeapon();   // возможно особенное оружие
+        builder.buildWeapon();   
         builder.buildArmor();
-
         builder.buildBanner();  
-
         builder.buildAttributes();
 
-        // Дополнительный бонус лидеру
+  
         Ork leader = builder.getOrk();
         leader.setRole("Leader");
         leader.setStrength(leader.getStrength() + 20);
@@ -52,20 +49,15 @@ public class OrkDirector {
         builder.createNewOrk();
         builder.buildName(name);
         builder.buildTribe();
-
-        // Заменим оружие на лук вручную
         builder.getOrk().setWeapon(new Bow());
-
         builder.buildArmor();
-        builder.buildBanner(); // можно использовать лёгкое знамя
-
+        builder.buildBanner(); 
         builder.buildAttributes();
 
-        // Дополнительные скаутские бонусы
         Ork scout = builder.getOrk();
         scout.setRole("Scout");
         scout.setAgility(scout.getAgility() + 25);
-        scout.setStrength((int)(scout.getStrength() * 0.8)); // чуть слабее
+        scout.setStrength((int)(scout.getStrength() * 0.8)); 
         return scout;
     }
 }

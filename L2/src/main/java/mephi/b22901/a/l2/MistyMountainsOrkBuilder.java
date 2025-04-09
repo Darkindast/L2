@@ -15,35 +15,35 @@ public class MistyMountainsOrkBuilder extends OrkBuilder {
     }
      @Override
     public void buildName(String name) {
-        ork.setName(name);
+        getOrk().setName(name);
     }
     
     @Override
     public void buildTribe() {
-        ork.setTribe("Misty Mountains");
+        getOrk().setTribe("Misty Mountains");
     }
   
     @Override
     public void buildWeapon() {
-        ork.setWeapon(gearFactory.createWeapon());
+        getOrk().setWeapon(getgearFactory().createWeapon());
     }
 
     @Override
     public void buildArmor() {
-        ork.setArmor(gearFactory.createArmor());
+        getOrk().setArmor(getgearFactory().createArmor());
     }
 
     @Override
     public void buildBanner() {
-        ork.setBanner(gearFactory.createBanner());
+        getOrk().setBanner(getgearFactory().createBanner());
     }
 
     @Override
     public void buildAttributes() {
-        ork.setStrength((int) (Math.random() * 60 + 30));
-        ork.setAgility((int) (Math.random() * 80));
-        ork.setIntelligence((int) (Math.random() * 25));
-        ork.setHealth((int) (Math.random() * 150 + 50));
+        getOrk().setStrength((int) (Math.random() * 60 + 30));
+        getOrk().setAgility((int) (Math.random() * 80));
+        getOrk().setIntelligence((int) (Math.random() * 25));
+        getOrk().setHealth((int) (Math.random() * 150 + 50));
     }
 }
 

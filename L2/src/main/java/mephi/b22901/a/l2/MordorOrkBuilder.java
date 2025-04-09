@@ -16,35 +16,35 @@ public class MordorOrkBuilder extends OrkBuilder {
 
     @Override
     public void buildName(String name) {
-        ork.setName(name);
+        getOrk().setName(name);
     }
 
     @Override
     public void buildTribe() {
-        ork.setTribe("Mordor");
+        getOrk().setTribe("Mordor");
     }
 
     @Override
     public void buildWeapon() {
-        ork.setWeapon(gearFactory.createWeapon());
+        getOrk().setWeapon(getgearFactory().createWeapon());
     }
 
     @Override
     public void buildArmor() {
-        ork.setArmor(gearFactory.createArmor());
+        getOrk().setArmor(getgearFactory().createArmor());
     }
 
     @Override
     public void buildBanner() {
-        ork.setBanner(gearFactory.createBanner());
+        getOrk().setBanner(getgearFactory().createBanner());
     }
 
     @Override
     public void buildAttributes() {
-        ork.setStrength((int) (Math.random() * 100));
-        ork.setAgility((int) (Math.random() * 60));
-        ork.setIntelligence((int) (Math.random() * 30));
-        ork.setHealth((int) (Math.random() * 150 + 50));
+        getOrk().setStrength((int) (Math.random() * 100));
+        getOrk().setAgility((int) (Math.random() * 60));
+        getOrk().setIntelligence((int) (Math.random() * 30));
+        getOrk().setHealth((int) (Math.random() * 150 + 50));
     }
 }
 

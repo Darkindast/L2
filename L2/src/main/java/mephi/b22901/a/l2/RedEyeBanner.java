@@ -12,6 +12,6 @@ package mephi.b22901.a.l2;
 public class RedEyeBanner implements Banner {
     @Override
     public String getName() {
-        return "Знамя с Красным Оком.";
+        return "Знамя с Красным Оком";
     }
 }
