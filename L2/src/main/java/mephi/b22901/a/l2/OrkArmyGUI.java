@@ -15,7 +15,7 @@ import java.awt.*;
 import java.util.*;
 import com.github.javafaker.Faker;
 
-public class OrkArmyApp {
+public class OrkArmyGUI {
     private JFrame frame;
     private JComboBox<String> tribeCombo;
     private JComboBox<String> typeCombo;
@@ -33,7 +33,7 @@ public class OrkArmyApp {
     private JTextArea infoTextArea;
     private JPanel statsPanel;
 
-    public OrkArmyApp() {
+    public OrkArmyGUI() {
         frame = new JFrame("Армия Орков");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 600);
@@ -143,15 +143,15 @@ public class OrkArmyApp {
         infoTextArea.setText(sb.toString());
 
         statsPanel.removeAll();
-        statsPanel.add(createThinStatBar("Сила", orc.getStrength(), 100));
-        statsPanel.add(createThinStatBar("Ловкость", orc.getAgility(), 100));
-        statsPanel.add(createThinStatBar("Интеллект", orc.getIntelligence(), 50));
-        statsPanel.add(createThinStatBar("Здоровье", orc.getHealth(), 200));
+        statsPanel.add(createStatBar("Сила", orc.getStrength(), 100));
+        statsPanel.add(createStatBar("Ловкость", orc.getAgility(), 100));
+        statsPanel.add(createStatBar("Интеллект", orc.getIntelligence(), 50));
+        statsPanel.add(createStatBar("Здоровье", orc.getHealth(), 200));
         statsPanel.revalidate();
         statsPanel.repaint();
     }
 
-    private JPanel createThinStatBar(String label, int value, int max) {
+    private JPanel createStatBar(String label, int value, int max) {
         JPanel panel = new JPanel(new BorderLayout());
         JLabel lbl = new JLabel(label + ":");
         lbl.setPreferredSize(new Dimension(80, 20));
